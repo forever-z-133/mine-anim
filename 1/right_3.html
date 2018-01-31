@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="Content-Type" content="text/html" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=938,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="wap-font-scale" content="no">
+<title>收集动画</title>
+<meta name="keywords" content="张永恒, foreverZ, 案例库" />
+<meta name="description" content="" />
+<!--[if lt IE 9]><script>alert('您的浏览器版本过低，请更新本版本浏览器，或更换为诸如谷歌浏览器的现代浏览器')</script><![endif]-->
+<script>window.onload=function(){if(window.innerWidth>768) {return};var s=document.createElement("script");s.src="https://cdn.bootcss.com/eruda/1.2.6/eruda.min.js";document.body.appendChild(s);s.onload=function(){eruda.init()}}</script>
+<link href="https://cdn.bootcss.com/prism/9000.0.1/themes/prism.min.css" rel="stylesheet">
+<link href="../libs/style.css" rel="stylesheet">
+<style>
+.page2 {
+
+}
+.anim {
+  animation: right_show_3 1s;
+  -webkit-mask-image: linear-gradient(to right, transparent, #fff 100px);
+  -webkit-mask-size: 200% 100%;
+  -webkit-mask-repeat: repeat-y;
+  -webkit-mask-position: -99.99% 0;
+}
+@keyframes right_show_3 {
+  0% {-webkit-mask-position: -99.99% 0;}
+  100% {-webkit-mask-position: -100px 0;}
+}
+</style>
+</head>
+
+<body>
+<div class="demo">
+  <div class="page page1"></div>
+  <div class="page page2">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/prism/9000.0.1/prism.min.js"></script>
+<script src="../libs/common.js"></script>
+<script>
+</script>
+</body>
+</html>
