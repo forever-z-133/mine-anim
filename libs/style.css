@@ -26,13 +26,35 @@ html, body {
 .page2 {
 	background: pink;
 }
-[data-anim] {
-	z-index: -1;
-	pointer-events: none;
-	transform: translate3d(0,0,0);
+.word {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  font-size: 2em;
+  color: orange;
+  text-align: center;
 }
-.anim {
-  z-index: 2;
-	pointer-events: auto;
-  transition: z-index .01s; /* 处理瞬发时的闪屏 */
+.modal {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  opacity: 0;
+  z-index: -1;
+  overflow: hidden;
+  -webkit-transition: opacity .3s, z-index 0s .3s;
+  transition: opacity .3s, z-index 0s .3s;
+}
+.modal-bg {
+  background: rgba(0,0,0,.7);
+}
+.modal.in {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.modal-box {
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
 }

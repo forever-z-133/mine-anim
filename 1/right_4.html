@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="wap-font-scale" content="no">
-<title>蒙版型显隐动画-滑出</title>
+<title>3D型显隐动画-滑出</title>
 <meta name="keywords" content="张永恒, foreverZ, 案例库" />
 <meta name="description" content="" />
 <!--[if lt IE 9]><script>alert('您的浏览器版本过低，请更新本版本浏览器，或更换为诸如谷歌浏览器的现代浏览器')</script><![endif]-->
@@ -29,13 +29,12 @@
   pointer-events: auto;
 }
 [data-anim="slide"] {
-  -webkit-mask: linear-gradient(to right, rgba(0,0,0,0), #fff 30%);
-  -webkit-mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: -100% 0;
+  transform-style: preserve-3d;
+  transform-origin: right;
+  transform: perspective(500px) rotateY(-90deg);
 }
 [data-anim="slide"].anim {
-  -webkit-mask-position: 100% 0;
+  transform: perspective(500px) rotateY(0deg);
 }
 </style>
 </head>
@@ -44,7 +43,7 @@
 <div class="demo">
   <div class="page page1"></div>
   <div class="page page2" data-anim="slide">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
-  <div class="word">-webkit-mask</div>
+  <div class="word">rotate3d</div>
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/prism/9000.0.1/prism.min.js"></script>
