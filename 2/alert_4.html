@@ -28,9 +28,6 @@
   z-index: 0;
   pointer-events: auto;
 }
-.modal {
-  /*display: table;*/
-}
 .alert {
   position: absolute;
   left: 0; right: 0;
@@ -42,10 +39,10 @@
   background: #fff;
 }
 [data-anim="alert"] {
-  transform: translate3d(0,20%,0);
+  transform: perspective(500px) scale(0,0) rotateY(0);
 }
 [data-anim="alert"].anim {
-  transform: translate3d(0,0,0);
+  transform: perspective(500px) scale(1,1) rotateY(360deg);
 }
 </style>
 </head>
@@ -59,7 +56,7 @@
       <div class="alert" data-anim="alert">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
     </div>
   </div>
-  <div class="word">opacity</div>
+  <div class="word">rotateY</div>
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/prism/9000.0.1/prism.min.js"></script>

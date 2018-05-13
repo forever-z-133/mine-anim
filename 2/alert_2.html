@@ -28,9 +28,6 @@
   z-index: 0;
   pointer-events: auto;
 }
-.modal {
-  /*display: table;*/
-}
 .alert {
   position: absolute;
   left: 0; right: 0;
@@ -42,10 +39,18 @@
   background: #fff;
 }
 [data-anim="alert"] {
-  transform: translate3d(0,20%,0);
+  transform: scale(0,0);
 }
 [data-anim="alert"].anim {
-  transform: translate3d(0,0,0);
+  transform: scale(1,1);
+  transition: none;
+  animation: bounce-scale .5s;
+}
+@keyframes bounce-scale {
+  0% { transform: scale(0,0); }
+  70% { transform: scale(1.1,1.1); }
+  95% { transform: scale(.9,.9); }
+  100% { transform: scale(1,1); }
 }
 </style>
 </head>
@@ -59,7 +64,7 @@
       <div class="alert" data-anim="alert">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
     </div>
   </div>
-  <div class="word">opacity</div>
+  <div class="word">scale</div>
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/prism/9000.0.1/prism.min.js"></script>

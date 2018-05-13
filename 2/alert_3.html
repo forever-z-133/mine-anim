@@ -28,9 +28,6 @@
   z-index: 0;
   pointer-events: auto;
 }
-.modal {
-  /*display: table;*/
-}
 .alert {
   position: absolute;
   left: 0; right: 0;
@@ -42,10 +39,13 @@
   background: #fff;
 }
 [data-anim="alert"] {
-  transform: translate3d(0,20%,0);
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAfCAMAAAHPZK9SAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURUxpcfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfiBAfdaDGgAAAARdFJOUwC/dkKwZYPmiDSZVgukI90andXgTgAAANBJREFUGBmNwQligjAAAMEFEjbhUP//2gYiFbBKZyAgJAuwgFmBhh4LLEAj+IQbsGopbsriYaYXGKwm3OAGN2BF4YKVDqxmV9FVBDzDN/SeQfKIhTs9T8lqYm+w46XVBORgyCw6V60VhUcB7p5MeBbwDb7Bs0DjCeBRAEYPWER3qDo3Db+sEjvJouMgO7P3SG6GDvLgJmWqPPvNSNF6IUHnpUjjpTv+A42X7mQvjRC90FPcgt+MVNGPel7Gxr+0HN2SJ0PmD7HxpeWj3lWa2PsBodcX+BlK75QAAAAASUVORK5CYII=);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: auto 0%;
 }
 [data-anim="alert"].anim {
-  transform: translate3d(0,0,0);
+  -webkit-mask-size: auto 300%;
 }
 </style>
 </head>
@@ -59,7 +59,7 @@
       <div class="alert" data-anim="alert">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
     </div>
   </div>
-  <div class="word">opacity</div>
+  <div class="word">-webkit-mask</div>
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/prism/9000.0.1/prism.min.js"></script>
