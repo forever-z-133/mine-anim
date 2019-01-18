@@ -36,6 +36,11 @@
 可视化制作工具：[cubic-bezier](http://yisibl.github.io/cubic-bezier/)、[Stylie](http://jeremyckahn.github.io/stylie/)
 
 ## 拓展阅读
+[动画的12项基本法则](https://www.w3cplus.com/css3/animation-principles-for-the-web.html)
+[动效不该难](https://mp.weixin.qq.com/s/YaK_c-y0yTS1jcjGs3S8y]
+[最全最好用的动效落地方法](https://mp.weixin.qq.com/s/qpU2cw1Es7a_wM9Y35LyVg)
+[12个最重要的交互动效设计原则](https://mp.weixin.qq.com/s/dx09gAvnkWrGJ8_QodLC4Q)
+[起点国际浪漫之旅](https://mp.weixin.qq.com/s/ghxtZkj-SaeyH5nFM_IL0A)
 整理中...
 
 ---- 
