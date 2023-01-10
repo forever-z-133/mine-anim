@@ -1,6 +1,6 @@
 # 动效库
 用以整理各类动画理论和展示简单动画效果，交流为主。  
-案例：https://foreverZ133.github.io/mine-anim/
+案例：https://forever-z-133.github.io/mine-anim/
 
 ## 动画分类
 显隐类、普通类、图形类、多元素类、帧动画
